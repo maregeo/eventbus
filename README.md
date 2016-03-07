@@ -1,8 +1,8 @@
 # eventbus
 it's about decoupling and the separation of concerns.
 
-How to use?
-add this tag in your application spring.xml
+How to use?<br/>
+add this tag in your application spring.xml<br/>
 step 1:
 <bean id="eventBus" class="com.qc.eventbus.spring.SpringEventBus" autowire="byName" init-method="init" destroy-method="destroy"/>
 step 2:
