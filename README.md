@@ -4,7 +4,9 @@ it's about decoupling and the separation of concerns.
 How to use?<br/>
 add this tag in your application spring.xml<br/>
 step 1:<br/>
-#<bean id="eventBus" class="com.qc.eventbus.spring.SpringEventBus" autowire="byName" init-method="init" destroy-method="destroy"/>#<br/>
+<bean id="eventBus" class="com.qc.eventbus.spring.SpringEventBus" autowire="byName" init-method="init" destroy-method="destroy"/>
+add spring bean in spring.xml com.qc.eventbus.spring.SpringEventBus and add init-method="init" and destroy-method="destroy"
+
 step 2:<br/>
 use eventbus instance like this<br/>
 eventbus.publish(DemoEvent event);<br/>
